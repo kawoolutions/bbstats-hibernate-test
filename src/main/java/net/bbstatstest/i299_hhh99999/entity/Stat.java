@@ -2,7 +2,6 @@ package net.bbstatstest.i299_hhh99999.entity;
 
 import java.io.Serializable;
 
-import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -19,7 +18,7 @@ public class Stat implements Serializable
 {
     private static final long serialVersionUID = 1L;
 
-    @Basic(optional = false)
+    @Id
     @Column
     private Integer period;
 
@@ -32,36 +31,6 @@ public class Stat implements Serializable
 
     public Stat()
     {
-    }
-
-    public Integer getGameId()
-    {
-        return playerStat.getGameId();
-    }
-
-    public void setGameId(Integer gameId)
-    {
-        playerStat.setGameId(gameId);
-    }
-
-    public Boolean getHome()
-    {
-        return playerStat.getHome();
-    }
-
-    public void setHome(Boolean home)
-    {
-        playerStat.setHome(home);
-    }
-
-    public Integer getPlayerId()
-    {
-        return playerStat.getPlayerId();
-    }
-
-    public void setPlayerId(Integer playerId)
-    {
-        playerStat.setPlayerId(playerId);
     }
 
     public Integer getPeriod()

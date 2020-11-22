@@ -37,26 +37,6 @@ public class PlayerStat implements Serializable
     {
     }
 
-    public Integer getGameId()
-    {
-        return score.getGameId();
-    }
-
-    public void setGameId(Integer gameId)
-    {
-        score.setGameId(gameId);
-    }
-
-    public Boolean getHome()
-    {
-        return score.getHome();
-    }
-
-    public void setHome(Boolean home)
-    {
-        score.setHome(home);
-    }
-
     public Integer getPlayerId()
     {
         return playerId;
