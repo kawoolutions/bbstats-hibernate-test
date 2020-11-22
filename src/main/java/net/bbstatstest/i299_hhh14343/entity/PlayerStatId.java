@@ -1,4 +1,4 @@
-package net.bbstatstest.i299_hhh99999.entity;
+package net.bbstatstest.i299_hhh14343.entity;
 
 import java.io.Serializable;
 
