@@ -8,31 +8,10 @@ public class PlayerStatId implements Serializable
 
     private Integer playerId;
 
-    // nested composite PK @IdClass: named like relationship in entity class
     private ScoreId score;
 
     public PlayerStatId()
     {
-    }
-
-    public Integer getGameId()
-    {
-        return score.getGameId();
-    }
-
-    public void setGameId(Integer gameId)
-    {
-        score.setGameId(gameId);
-    }
-
-    public Boolean getHome()
-    {
-        return score.getHome();
-    }
-
-    public void setHome(Boolean home)
-    {
-        score.setHome(home);
     }
 
     public Integer getPlayerId()
@@ -45,13 +24,13 @@ public class PlayerStatId implements Serializable
         this.playerId = playerId;
     }
 
-    public ScoreId getScoreId()
+    public ScoreId getScore()
     {
         return score;
     }
 
-    public void setScoreId(ScoreId scoreId)
+    public void setScore(ScoreId score)
     {
-        this.score = scoreId;
+        this.score = score;
     }
 }
