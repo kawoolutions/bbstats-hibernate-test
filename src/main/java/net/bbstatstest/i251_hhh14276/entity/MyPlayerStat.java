@@ -13,9 +13,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "\"PlayerStats\"")
-@IdClass(PlayerStatId.class)
-public class PlayerStat implements Serializable
+@Table(name = "\"MyPlayerStats\"")
+@IdClass(MyPlayerStatId.class)
+public class MyPlayerStat implements Serializable
 {
     private static final long serialVersionUID = 1L;
 
@@ -31,9 +31,9 @@ public class PlayerStat implements Serializable
     @ManyToOne(optional = false, fetch = FetchType.EAGER)
     @JoinColumn(name = "game_id", referencedColumnName = "game_id")
     @JoinColumn(name = "is_home", referencedColumnName = "is_home")
-    private Score score;
+    private MyScore score;
 
-    public PlayerStat()
+    public MyPlayerStat()
     {
     }
 
@@ -77,12 +77,12 @@ public class PlayerStat implements Serializable
         this.jerseyNbr = jerseyNbr;
     }
 
-    public Score getScore()
+    public MyScore getScore()
     {
         return score;
     }
 
-    public void setScore(Score score)
+    public void setScore(MyScore score)
     {
         this.score = score;
     }

@@ -10,9 +10,9 @@ import javax.persistence.IdClass;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "\"Scores\"")
-@IdClass(ScoreId.class)
-public class Score implements Serializable
+@Table(name = "\"MyScores\"")
+@IdClass(MyScoreId.class)
+public class MyScore implements Serializable
 {
     private static final long serialVersionUID = 1L;
 
@@ -32,7 +32,7 @@ public class Score implements Serializable
     @Column(name = "final_score")
     private Integer finalScore;
 
-    public Score()
+    public MyScore()
     {
     }
 

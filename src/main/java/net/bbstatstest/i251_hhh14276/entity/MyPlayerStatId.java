@@ -2,15 +2,15 @@ package net.bbstatstest.i251_hhh14276.entity;
 
 import java.io.Serializable;
 
-public class PlayerStatId implements Serializable
+public class MyPlayerStatId implements Serializable
 {
     private static final long serialVersionUID = 1L;
 
     private Integer playerId;
 
-    private ScoreId score;
+    private MyScoreId score;
 
-    public PlayerStatId()
+    public MyPlayerStatId()
     {
     }
 
@@ -24,12 +24,12 @@ public class PlayerStatId implements Serializable
         this.playerId = playerId;
     }
 
-    public ScoreId getScore()
+    public MyScoreId getMyScore()
     {
         return score;
     }
 
-    public void setScore(ScoreId score)
+    public void setMyScore(MyScoreId score)
     {
         this.score = score;
     }

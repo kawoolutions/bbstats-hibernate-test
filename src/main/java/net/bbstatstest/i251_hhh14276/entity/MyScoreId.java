@@ -2,7 +2,7 @@ package net.bbstatstest.i251_hhh14276.entity;
 
 import java.io.Serializable;
 
-public class ScoreId implements Serializable
+public class MyScoreId implements Serializable
 {
     private static final long serialVersionUID = 1L;
 
@@ -10,7 +10,7 @@ public class ScoreId implements Serializable
 
     private Boolean home;
 
-    public ScoreId()
+    public MyScoreId()
     {
     }
 
